@@ -1,0 +1,7 @@
+- id: update-copyright-year
+  name: Update Copyright Year
+  description: Update the copyright year in LICENSE files.
+  entry: update-copyright-year
+  language: python
+  pass_filenames: false
+  always_run: true
