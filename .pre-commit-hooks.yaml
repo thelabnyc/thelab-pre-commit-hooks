@@ -5,3 +5,11 @@
   language: python
   pass_filenames: false
   always_run: true
+
+- id: npm-install
+  name: NPM Install
+  description: Run `npm install`. Useful if subsequent precommit hooks rely on node_modules.
+  entry: /usr/bin/env bash -c 'npm install'
+  language: script
+  pass_filenames: false
+  always_run: true
