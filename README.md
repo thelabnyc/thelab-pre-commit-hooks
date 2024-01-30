@@ -6,7 +6,7 @@ Sample `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://gitlab.com/thelabnyc/thelab-pre-commit-hooks
-  rev: r0.0.1
+  rev: r0.0.2
   hooks:
       - id: update-copyright-year
         args:
