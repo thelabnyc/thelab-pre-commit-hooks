@@ -6,7 +6,7 @@ major_version_zero = true
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_merge_prerelease = true
-version_provider = "npm"
+version_provider = "scm"
 version_scheme = "semver"
 version_files = [
     "package.json:version",
