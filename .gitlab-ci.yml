@@ -2,6 +2,6 @@ stages:
   - test
 
 include:
-  - component: gitlab.com/thelabnyc/thelab-ci-components/precommit@0.4.0
+  - component: gitlab.com/thelabnyc/thelab-ci-components/precommit@0.5.1
     inputs:
       image: registry.gitlab.com/thelabnyc/python:3.13.967-node20@sha256:f50391f64f705b8013c6c54f880fac5ed3a892203c81cbbdadbd341abdcb1925
