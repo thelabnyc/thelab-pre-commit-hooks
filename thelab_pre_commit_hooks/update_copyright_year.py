@@ -3,8 +3,8 @@ from __future__ import annotations
 import argparse
 import pathlib
 import re
-from datetime import date
-from typing import Sequence
+from collections.abc import Sequence
+from datetime import datetime, timezone
 
 
 def update_year(
@@ -14,7 +14,8 @@ def update_year(
     def _repl(matchobj):
         match = matchobj.group(0)
         year = matchobj.group("year")
-        return match.replace(year, str(date.today().year))
+        now = datetime.now(timezone.utc).astimezone()
+        return match.replace(year, str(now.year))
 
     orig_license = file.read_text()
     new_license = pattern.sub(_repl, orig_license)
